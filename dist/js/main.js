@@ -52,4 +52,21 @@ $('.owl-one').owlCarousel({
         }
     }
 });
+$(function () {
+
+    onscroll();
+});
+
+function onscroll() {
+
+    $(window).scroll(function () {
+        var height = "1";
+        var scroll = $(window).scrollTop();
+        if (scroll > height) {
+            $("header").addClass("active");
+        } else {
+            $("header").removeClass("active");
+        }
+    });
+}
 //# sourceMappingURL=main.js.map

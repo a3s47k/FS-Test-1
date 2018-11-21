@@ -6323,10 +6323,11 @@ html, body {
     width: auto; } }
 
 header {
-  background: rgba(0, 0, 0, 0);
   position: fixed;
   width: 100vw;
-  z-index: 80; }
+  z-index: 999; }
+  header.active {
+    background: rgba(0, 0, 0, 0.3); }
   header nav .navbar-brand img {
     height: 2rem;
     width: 6rem; }

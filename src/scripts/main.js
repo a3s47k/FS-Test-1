@@ -19,3 +19,21 @@ $('.owl-one').owlCarousel({
         }
     }
 })
+$(function(){
+
+	onscroll()
+
+})
+
+function onscroll(){
+
+	$(window).scroll(function () {
+		let height = "1";
+		let scroll = $(window).scrollTop();
+		if (scroll > height) {
+			$("header").addClass("active");
+		} else{
+			$("header").removeClass("active");
+		}
+	});
+}
