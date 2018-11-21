@@ -1,0 +1,88 @@
+header
+	background: rgba(#000,0)
+	position: fixed
+	width: 100vw
+	z-index: 80
+	nav
+		
+		.navbar-brand
+			img
+				height: 2rem
+				width: 6rem
+
+		.navbar-nav
+			background: rgba(#000,0.4)
+			list-style-type: none
+			+pos(abs,null null null 50%)
+			transform: translateX(-50%)
+			z-index: 99
+			.nav-item
+				text-transform: uppercase
+				text-align: center
+				display: flex
+				flex-flow: column nowrap
+				justify-content: center
+				margin-bottom: 1rem
+				width: 70vw
+				&.active
+					background: #f2c73e
+					.nav-link
+						color: #000
+				&:hover
+					background: #f2c73e
+					.nav-link
+						color: #000
+			
+				&:first-child
+					margin-top: 2rem
+				.nav-link
+					font-size: 1.2rem
+					text-decoration: none
+					color: #fff
+				// height: 2.5rem
+				// display: flex
+				// justify-content: center
+				// align-items: center
+				border-radius: 2rem
+				// margin-right: 0.5rem
+				// line-height: 3rem
+				// background: 
+				
+	+media-breakpoint-up(sm)
+		nav
+			.navbar-brand
+				img
+					height: 3.5rem
+					width: 10rem
+			.navbar-nav
+				.nav-item
+					width: 60vw
+					.nav-link
+						font-size: 1.5rem
+	+media-breakpoint-up(md)
+		nav
+			.navbar-brand
+				img
+					height: auto
+					width: 100%
+			.navbar-nav
+				.nav-item
+					width: 60vw
+					.nav-link
+						font-size: 1.7rem
+	+media-breakpoint-up(lg)
+		nav
+			.navbar-nav
+				background: none
+				right: 0
+				transform: translateX(0)
+				.nav-item
+					width: 7.5rem
+					height: 2.5rem
+					margin-right: 0.5rem
+					&:first-child
+						margin-top: 0rem
+					&:last-child
+						margin-right: 0rem
+					.nav-link
+						font-size: 1.2rem

@@ -1,0 +1,148 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.home-slider
+		.owl-one.owl-carousel.owl-theme
+			.item
+				img(src="./img/home-slider.png", alt="")
+				.title
+					h3 Lorem ipsum dolor sit amet, consectetur adipisicing
+					p.text-slider Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi, optio, sit officiis molestias cum at, eaque accusantium 
+					p
+						a(href="#") click more
+			.item
+				img(src="./img/home-slider.png", alt="")
+				.title
+					h3 Lorem ipsum dolor sit amet, consectetur adipisicing
+					p.text-slider Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi, optio, sit officiis molestias cum at, eaque accusantium 
+					p
+						a(href="#") click more
+			.item
+				img(src="./img/home-slider.png", alt="")
+				.title
+					h3 Lorem ipsum dolor sit amet, consectetur adipisicing
+					p.text-slider Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi, optio, sit officiis molestias cum at, eaque accusantium 
+					p
+						a(href="#") click more
+	section.intro
+		.container
+			.row
+				.col
+					h3 why 
+						span choose us
+					.text-title Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum doloribus nisi eaque
+			.row
+				.col-12.col-md-4
+				
+					figure
+						i.fa.fa-book
+						figcaption
+							p.item-text Lorem ipsum dolor 
+							p.item-detail Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, suscipit nulla quas dicta quis necessitatibus modi 
+				.col-12.col-md-4
+					figure
+						i.fa.fa-desktop
+						figcaption
+							p.item-text Lorem ipsum dolor 
+							p.item-detail Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, suscipit nulla quas dicta quis necessitatibus modi 
+				.col-12.col-md-4
+					figure
+						i.fa.fa-suitcase
+						figcaption
+							p.item-text Lorem ipsum dolor 
+							p.item-detail Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, suscipit nulla quas dicta quis necessitatibus modi 
+				
+	section.reason
+		.container
+			.row
+				.col-12.col-md-6
+					.box-1
+						h3 why 
+							span choose us
+						p.text-title Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptates eaque iure nihil necessitatibus placeat
+						p.text-box Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio iste atque sit optio facere beatae, obcaecati quo 
+						p ipsa, numquam fuga dolore illum commodi?  Labore perferendis similique unde totam dolorem aspernatur.Lorem ipsum, dolor sit amet 	
+						p consectetur adipisicing elit. Distinctio iste atque sit optio facere beatae, obcaecati quo  ipsa, numquam fuga dolore illum commodi? Labore perferendis similique unde totam dolorem aspernatur.Lorem ipsum, 
+						p.pt-3
+							a(href="#") View more
+					
+
+
+				.col-12.col-md-6
+					.box-2
+						.scollbar
+							p.detail-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio iste atque sit optio facere beatae, 
+							p obcaecati quo ipsa, numquam fuga dolore illum commodi? Labore perferendis similique unde totam dolorem aspernatur.Lorem ipsum, dolor sit amet consectetur adipisicing 
+							p elit. Distinctio iste atque sit optio facere beatae, obcaecati quo ipsa, numquam fuga dolore illum commodi? Labore perferendis similique unde totam dolorem aspernatur.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio iste atque sit optio facere beatae, 
+							p obcaecati quo ipsa, numquam fuga dolore illum commodi? Labore perferendis similique unde totam dolorem aspernatur.rem aspernatur.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio iste atque sit optio facere beatae, 
+							p obcaecati quo ipsa, numquam fuga dolore illum commodi? Labore perferendis similique unde totam dolorem aspernatur.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio iste atque sit optio facere beatae, obcaecati quo ipsa, numquam fuga dolore illum commodi? Labore perferendis similique unde totam dolorem aspernatur.
+	section.blank
+		.container-fluid.no-gutters
+	section.feedback
+		.container
+			.row
+				.col
+					h3 Feed back
+					p.feedback-title Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusantium enim omnis eaque iure. Tenetur delectus in
+
+			.row.pt-5
+				.col-12.col-sm-6.col-md-3
+					figure
+						img(src="./img/feed-2.png", alt="").img-fluid
+						figcaption
+							p.item-text Lorem ipsum dolor 
+							p.item-detail Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, suscipit nulla quas dicta quis necessitatibus modi 
+				.col-12.col-sm-6.col-md-3
+					figure
+						img(src="./img/feed-2.png", alt="").img-fluid
+						figcaption
+							p.item-text Lorem ipsum dolor 
+							p.item-detail Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, suscipit nulla quas dicta quis necessitatibus modi 
+				.col-12.col-sm-6.col-md-3
+					figure
+						img(src="./img/feed-2.png", alt="").img-fluid
+						figcaption
+							p.item-text Lorem ipsum dolor 
+							p.item-detail Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, suscipit nulla quas dicta quis necessitatibus modi 
+				.col-12.col-sm-6.col-md-3
+					figure
+						img(src="./img/feed-2.png", alt="").img-fluid
+						figcaption
+							p.item-text Lorem ipsum dolor 
+							p.item-detail Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, suscipit nulla quas dicta quis necessitatibus modi 
+	section.weird
+		.container-fluid.no-gutters
+	section.moving
+		.container
+			.row
+				.col-12.col-md-6
+					.moving-bg
+						img(src="./img/moving.png", alt="").img-fluid
+				.col-12.col-md-6
+					.row
+						.col
+							h3 moving
+							p.moving-title Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia atque ea est earum aspernatur minima eligendi
+					.row.box-moving
+						.col-12.col-md-3
+							i.fa.fa-plane
+						.col-12.col-md-9
+							p.text-moving Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus 
+					.row.box-moving
+						.col-12.col-md-3
+							i.fa.fa-train
+						.col-12.col-md-9
+							p.text-moving Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus 
+					.row.box-moving
+						.col-12.col-md-3
+							i.fa.fa-taxi
+						.col-12.col-md-9
+							p.text-moving Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus 

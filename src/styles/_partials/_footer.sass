@@ -1,0 +1,59 @@
+footer
+	
+	.footer-1
+		+pad(3rem 1rem)
+		background: #000
+	
+		ul
+			list-style-type: none
+			
+			li
+				a
+					text-decoration: none
+					color: #fff
+					font-size: 1.5rem
+					font-weight: 500
+					span
+						margin-left: 0.5rem
+						i
+							font-size: 1rem
+							color: #fff
+		.second-nav
+			list-style-type: none
+			
+			li
+				a
+					text-decoration: none
+					color: #fff
+					font-size: 1.5rem
+					font-weight: 500
+					text-transform: uppercase
+	.footer-2
+		background: #d3d3d3
+	
+		p
+			margin: auto
+			text-align: center
+			font-size: 1.5rem
+	+media-breakpoint-up(sm)
+		.footer-1
+			ul
+				text-align: right
+			.second-nav
+				text-align: left
+	+media-breakpoint-up(md)
+		.footer-1
+			ul
+				li
+					a
+						font-size: 1.2rem
+						span
+							i
+								font-size: 1rem
+								color: #fff
+			.second-nav
+				li
+					a
+						font-size: 1.2rem
+	+media-breakpoint-up(lg)
+	+media-breakpoint-up(xl)
