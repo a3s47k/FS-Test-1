@@ -6975,8 +6975,7 @@ body .moving {
   body .moving .moving-bg {
     margin-top: 4rem; }
     body .moving .moving-bg img {
-      max-height: 30rem;
-      filter: grayscale(100%); }
+      max-height: 30rem; }
   body .moving h3 {
     position: relative;
     color: #000000;
@@ -7049,6 +7048,8 @@ body .moving {
       z-index: 99;
       min-height: 30rem;
       filter: grayscale(100%); }
+      body .moving img:hover {
+        filter: grayscale(0); }
     body .moving .moving-bg img {
       max-height: none; }
     body .moving h3 {
