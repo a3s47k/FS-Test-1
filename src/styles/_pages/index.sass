@@ -137,9 +137,7 @@ body
 			font-weight: 300
 		figure
 			padding-top: 2rem
-			&:hover
-				i
-					color: #f4c93e
+			
 			i
 				font-size: 6rem
 			figcaption
@@ -196,7 +194,9 @@ body
 		+media-breakpoint-up(lg)
 			
 			figure
-				
+				&:hover
+					i
+						color: #f4c93e
 				i
 					font-size: 8rem
 				figcaption

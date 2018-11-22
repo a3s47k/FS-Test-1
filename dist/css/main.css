@@ -6594,8 +6594,6 @@ body .intro {
     font-weight: 300; }
   body .intro figure {
     padding-top: 2rem; }
-    body .intro figure:hover i {
-      color: #f4c93e; }
     body .intro figure i {
       font-size: 6rem; }
     body .intro figure figcaption .item-text {
@@ -6658,6 +6656,8 @@ body .intro {
         font-size: 1rem;
         word-wrap: break-word; } }
   @media (min-width: 992px) {
+    body .intro figure:hover i {
+      color: #f4c93e; }
     body .intro figure i {
       font-size: 8rem; }
     body .intro figure figcaption .item-text {
