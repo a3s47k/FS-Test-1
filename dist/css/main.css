@@ -6575,6 +6575,7 @@ body .intro {
     text-transform: uppercase; }
     body .intro h3:before {
       content: '';
+      border-radius: 1.5rem;
       display: block;
       position: absolute;
       left: 50%;
@@ -6679,7 +6680,8 @@ body .reason {
     left: 0;
     display: block;
     content: '';
-    background: rgba(0, 0, 0, 0.5); }
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem; }
   body .reason .box-1 h3 {
     position: relative;
     font-size: 1.8rem;
@@ -6691,6 +6693,7 @@ body .reason {
     font-weight: 500;
     text-transform: uppercase; }
     body .reason .box-1 h3:before {
+      border-radius: 1.5rem;
       content: '';
       display: block;
       position: absolute;
@@ -6843,6 +6846,7 @@ body .feedback {
     padding-right: 0;
     padding-bottom: 2rem; }
     body .feedback h3:before {
+      border-radius: 1.5rem;
       content: '';
       display: block;
       position: absolute;
@@ -6991,7 +6995,8 @@ body .moving {
       width: 7.5rem;
       height: 4px;
       background: #f4c93e;
-      bottom: 0; }
+      bottom: 0;
+      border-radius: 1.5rem; }
   body .moving .moving-title {
     padding-top: 2rem;
     padding-right: 2rem;
