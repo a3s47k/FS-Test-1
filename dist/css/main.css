@@ -6857,8 +6857,8 @@ body .feedback {
       bottom: 0; }
   body .feedback .feedback-title {
     padding-top: 1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     color: #000;
     font-size: 1rem;
     font-weight: 300; }
@@ -6897,9 +6897,7 @@ body .feedback {
       padding-right: 2rem;
       padding-bottom: 2rem;
       padding-left: 2rem; }
-    body .feedback .text-title {
-      padding-right: 4rem;
-      padding-left: 4rem;
+    body .feedback .feedback-title {
       font-size: 1rem;
       font-weight: 300; }
     body .feedback figure img {
@@ -6907,11 +6905,13 @@ body .feedback {
     body .feedback figure figcaption .item-text {
       font-size: 1.3rem; }
     body .feedback figure figcaption .item-detail {
-      font-size: 1rem;
+      text-align: center;
       padding-top: 0;
       padding-right: 0;
       padding-bottom: 0;
-      padding-left: 0; } }
+      padding-left: 0;
+      word-wrap: break-word;
+      font-size: 1rem; } }
   @media (min-width: 768px) {
     body .feedback h3 {
       font-size: 1.7rem;
@@ -6921,7 +6921,7 @@ body .feedback {
       padding-left: 2rem; }
       body .feedback h3:before {
         bottom: 0.5; }
-    body .feedback .text-title {
+    body .feedback .feedback-title {
       padding-right: 8rem;
       padding-left: 8rem;
       font-size: 1rem;
@@ -6938,10 +6938,8 @@ body .feedback {
         padding-bottom: 0;
         padding-left: 1rem; }
       body .feedback figure figcaption .item-detail {
-        padding-top: 0;
-        padding-right: 0;
-        padding-bottom: 0;
-        padding-left: 0;
+        text-align: center;
+        letter-spacing: -1px;
         font-size: 1rem;
         word-wrap: break-word; } }
   @media (min-width: 992px) {
@@ -6950,7 +6948,14 @@ body .feedback {
     body .feedback figure figcaption .item-text {
       font-size: 1.4rem; }
     body .feedback figure figcaption .item-detail {
+      text-align: center;
+      letter-spacing: 0px;
+      word-spacing: 3px;
       font-size: 1.1rem; } }
+  @media (min-width: 1200px) {
+    body .feedback figure figcaption .item-detail {
+      letter-spacing: 2px;
+      word-spacing: -1px; } }
 
 body .weird {
   background: #dbb538;

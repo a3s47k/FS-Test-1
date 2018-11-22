@@ -343,7 +343,7 @@ body
 				border-radius: 1.5rem
 				+before-line(#000,0)
 		.feedback-title
-			+pad(1rem 1rem null 1rem)
+			+pad(1rem 2rem null 2rem)
 			color: #000
 			font-size: 1rem
 			font-weight: 300
@@ -380,8 +380,8 @@ body
 			h3
 				font-size: 1.2rem
 				+pad(3rem 2rem 2rem 2rem)
-			.text-title
-				+pad(null 4rem null 4rem)
+			.feedback-title
+				
 				font-size: 1rem
 				font-weight: 300
 			figure
@@ -391,8 +391,12 @@ body
 					.item-text
 						font-size: 1.3rem
 					.item-detail
-						font-size: 1rem
+						text-align: center
 						+pad(0 0)
+						word-wrap: break-word
+
+						font-size: 1rem
+			
 		+media-breakpoint-up(md)
 			h3
 				p
@@ -400,7 +404,7 @@ body
 				+pad(8rem 2rem 2rem 2rem)
 				&:before
 					bottom: 0.5
-			.text-title
+			.feedback-title
 				+pad(null 8rem null 8rem)
 
 				font-size: 1rem
@@ -415,7 +419,9 @@ body
 					
 						+pad(1rem 1rem 0 1rem)
 					.item-detail
-						+pad(0 0)
+						
+						text-align: center
+						letter-spacing: -1px
 						font-size: 1rem
 						word-wrap: break-word
 		+media-breakpoint-up(lg)
@@ -430,7 +436,16 @@ body
 					
 					
 					.item-detail
+						text-align: center
+						letter-spacing: 0px
+						word-spacing: 3px
 						font-size: 1.1rem
+		+media-breakpoint-up(xl)
+			figure
+				figcaption
+					.item-detail
+						letter-spacing: 2px
+						word-spacing: -1px
 	.weird
 		background: #dbb538
 		min-height: 0.5rem
