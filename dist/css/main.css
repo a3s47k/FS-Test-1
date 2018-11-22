@@ -6680,8 +6680,7 @@ body .reason {
     left: 0;
     display: block;
     content: '';
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 1.5rem; }
+    background: rgba(0, 0, 0, 0.5); }
   body .reason .box-1 h3 {
     position: relative;
     font-size: 1.8rem;
